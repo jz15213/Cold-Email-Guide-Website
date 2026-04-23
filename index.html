@@ -206,14 +206,120 @@
       </div>
     </section>
 
-    <section class="card reveal">
+    <section class="card reveal sending-system-card">
       <h2>5) Practical Sending System</h2>
-      <div class="checklist">
-        <label><input type="checkbox" /> Track sends in a spreadsheet</label>
-        <label><input type="checkbox" /> Schedule during weekday working hours</label>
-        <label><input type="checkbox" /> Attach resume when relevant</label>
-        <label><input type="checkbox" /> Follow up in 3-5 business days</label>
-        <label><input type="checkbox" /> Keep volume high and pipeline active</label>
+      <p class="section-lead">A lightweight workflow for sending at volume without losing track of people, timing, or follow-ups. Select a stage to expand the practical tips.</p>
+
+      <div class="sending-system">
+        <div class="system-flow" aria-label="Interactive cold email sending workflow">
+          <button class="system-step active" type="button" data-flow-step="build" aria-pressed="true">
+            <span class="system-step-number">01</span>
+            <span>
+              <strong>Build the list</strong>
+              <small>Volume matters, but track every person.</small>
+            </span>
+          </button>
+          <span class="system-connector" aria-hidden="true"></span>
+
+          <button class="system-step" type="button" data-flow-step="ask" aria-pressed="false">
+            <span class="system-step-number">02</span>
+            <span>
+              <strong>Pick the ask</strong>
+              <small>Opportunity request or coffee chat first.</small>
+            </span>
+          </button>
+          <span class="system-connector" aria-hidden="true"></span>
+
+          <button class="system-step" type="button" data-flow-step="compose" aria-pressed="false">
+            <span class="system-step-number">03</span>
+            <span>
+              <strong>Write the email</strong>
+              <small>Short, specific, sometimes bullet-driven.</small>
+            </span>
+          </button>
+          <span class="system-connector" aria-hidden="true"></span>
+
+          <button class="system-step" type="button" data-flow-step="schedule" aria-pressed="false">
+            <span class="system-step-number">04</span>
+            <span>
+              <strong>Schedule the send</strong>
+              <small>Land in inboxes during weekday work hours.</small>
+            </span>
+          </button>
+          <span class="system-connector" aria-hidden="true"></span>
+
+          <button class="system-step" type="button" data-flow-step="track" aria-pressed="false">
+            <span class="system-step-number">05</span>
+            <span>
+              <strong>Track the thread</strong>
+              <small>Spreadsheet, date sent, and next action.</small>
+            </span>
+          </button>
+
+          <div class="system-branch">
+            <button class="system-step system-step-branch" type="button" data-flow-step="followup" aria-pressed="false">
+              <span class="system-step-number">06A</span>
+              <span>
+                <strong>No reply</strong>
+                <small>Follow up after 3-5 business days.</small>
+              </span>
+            </button>
+            <button class="system-step system-step-branch" type="button" data-flow-step="conversation" aria-pressed="false">
+              <span class="system-step-number">06B</span>
+              <span>
+                <strong>They respond</strong>
+                <small>Use the chat to create a concrete next step.</small>
+              </span>
+            </button>
+          </div>
+
+          <button class="system-step system-step-wide" type="button" data-flow-step="referral" aria-pressed="false">
+            <span class="system-step-number">07</span>
+            <span>
+              <strong>If they cannot help, ask who can</strong>
+              <small>Most useful for research, labs, and network-driven roles.</small>
+            </span>
+          </button>
+          <span class="system-connector" aria-hidden="true"></span>
+
+          <button class="system-step system-step-wide" type="button" data-flow-step="volume" aria-pressed="false">
+            <span class="system-step-number">08</span>
+            <span>
+              <strong>Keep the list moving</strong>
+              <small>Add more good-fit people while current threads mature.</small>
+            </span>
+          </button>
+        </div>
+
+        <aside class="system-detail" id="flow-detail-panel" aria-live="polite">
+          <p class="system-detail-label" id="flow-category">Prep</p>
+          <h3 id="flow-title">Build the list before you send</h3>
+          <p class="system-detail-summary" id="flow-summary">Cold email works better when you have a real list, not one perfect person you are waiting on. Volume is key, as long as the people are still relevant.</p>
+
+          <div class="system-detail-section">
+            <h4>How to run this stage</h4>
+            <ul id="flow-actions">
+              <li>Use a spreadsheet with name, organization, why you chose them, date sent, follow-up date, and status.</li>
+              <li>Do not be afraid to reach out to more people. A larger, well-targeted list gives you more chances to learn what works.</li>
+              <li>Send in batches so you can keep quality high without treating every email like a one-off event.</li>
+            </ul>
+          </div>
+
+          <div class="system-meta-row">
+            <div>
+              <h4>Tools</h4>
+              <div class="system-tool-list" id="flow-tools">
+                <span>Spreadsheet</span>
+                <span>Status column</span>
+                <span>Weekly send batch</span>
+              </div>
+            </div>
+            <div>
+              <h4>Reminder</h4>
+              <p id="flow-note">The point is not spam. The point is enough organized, relevant outreach that silence from one person does not stop the process.</p>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
